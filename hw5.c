@@ -4,11 +4,12 @@ using namespace std;
 int hw1(void);
 int hw2(void);
 int hw3(void);
+int hw4(void);
 int main()
 {
 	A:
 	int a;
-	cout<<"输入1,2或3查看作业，输入任意其他键退出\n"<<endl;
+	cout<<"输入1,2,3或4查看作业，输入任意其他键退出\n"<<endl;
 	cin>>a;
 	switch(a)
 	{
@@ -28,8 +29,13 @@ int main()
 		hw3();
 		goto A;
 		break;
-		default:
-		cout<<"再见！\n"<<endl;
+		case 4:
+		cout<<"作业4：hello,world\n"<<endl;
+		hw4();
+		goto A;
+		break;
+		default :
+		cout<<"再见！"<<endl;
 		break;
 	}
 	return 0;
@@ -136,5 +142,11 @@ int hw3(void)
 		cout<<*p<<' ';
 	}
 	cout<<"\n";
+	return 0;
+}
+//========================================
+int hw4(void)
+{
+	cout<<"hello,world!!!!!!!\n"<<endl;
 	return 0;
 }
